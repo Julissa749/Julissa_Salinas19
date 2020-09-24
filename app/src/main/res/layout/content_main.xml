@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Datos Del Articulo "
+        android:textColor="#000000"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/et_codigo"
+        android:layout_width="226dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"></EditText>
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        android:layout_width="235dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_codigo">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_precio"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_descripcion">
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="111dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/guardar"
+        android:textColor="#D50000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_precio"></Button>
+
+    <Button
+        android:id="@+id/btn_Consultar1"
+        android:layout_width="115dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/ConsultarCod"
+        android:textColor="#D50000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guardar"></Button>
+
+    <Button
+        android:id="@+id/btn_consultar2"
+        android:layout_width="119dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/ConsultarCod2"
+        android:textColor="#D50000"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Consultar1"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar"></Button>
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Borrar"
+        android:textColor="#D50000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Consultar1"></Button>
+
+    <Button
+        android:id="@+id/btn_actualizar"
+        android:layout_width="112dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Actualiz"
+        android:textColor="#D50000"
+        app:layout_constraintEnd_toStartOf="@+id/btn_guardar"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_precio"></Button>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="208dp"
+        android:layout_height="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img1"
+        tools:layout_editor_absoluteY="67dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

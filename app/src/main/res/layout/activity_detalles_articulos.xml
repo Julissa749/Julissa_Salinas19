@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".detalles_articulos">
+
+    <TextView
+        android:id="@+id/tv_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Fecha de creacion: "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="248dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Resultado Encontrado"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="32dp"
+        android:text="Codigo:"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_codigo"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="Precio:"
+        android:textColor="#030405"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_precio"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="Descripcion: "
+        android:textColor="#020202"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_descripcion"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <TextView
+        android:id="@+id/tv_precio"
+        android:layout_width="217dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="000.00"
+        android:textColor="#101010"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descripcion" />
+
+    <TextView
+        android:id="@+id/tv_descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codigo"
+        android:layout_width="213dp"
+        android:layout_height="40dp"
+        android:text="@string/Codxx"
+        android:textColor="#0C0C0C"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/tv_codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_width="212dp"
+        android:layout_height="41dp"
+        android:text="@string/Codxx"
+        android:textColor="#0B0A0A"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado de la Busqueda"
+        android:textColor="#050505"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Codigo:"
+        android:textColor="#060607"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_codigo1"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/tv_codigo1"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="144dp"
+        android:gravity="center"
+        android:text="@string/Codxx"
+        android:textColor="#020202"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/tvUsername1"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Descripcion:"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_descripcion1"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
+
+    <TextView
+        android:id="@+id/tv_descripcion1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codigo1"
+        android:layout_width="104dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="@string/Codxx"
+        android:textColor="#0E0E0E"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/tvUsername2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_precio1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername1"
+        android:layout_width="84dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="Precio:"
+        android:textColor="#010102"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <TextView
+        android:id="@+id/tv_precio1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descripcion1"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="000.00"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <Button
+        android:id="@+id/btnGoToReports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha"
+        android:layout_width="132dp"
+        android:layout_height="37dp"
+        android:text="Ver reportes"
+        android:textColor="#D50000"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="616dp" />
+
+    <Button
+        android:id="@+id/btnEditInform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToReports"
+        app:layout_constraintVertical_bias="0.56"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:text="Editar Informe"
+        android:textColor="#D50000"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="663dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
